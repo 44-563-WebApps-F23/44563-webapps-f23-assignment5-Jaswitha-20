@@ -9,12 +9,24 @@
 }
 
 .Pictures_container{
-    height: 200;
-    width: 200;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 10px;
+   
+}
+
+.thumbnail_container{
+    height: 400px;
+    width: 400px;
     margin-bottom: 10px;
 }
 
 img{
     height: auto;
     max-width: 100%;
+}
+
+.navbar-brand{
+    background-color: rgb(178, 191, 234);
+    box-shadow: 1px 1px 4px;
 }

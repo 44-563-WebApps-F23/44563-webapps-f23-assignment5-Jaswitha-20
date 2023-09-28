@@ -18,6 +18,26 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="cities.html">A few Cities</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="basic.html">Basic Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advanced.html">Advanced Page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
     <h4>Visit Cities with Jaswitha</h4>
     <div class="container">
         <div class="row">
@@ -38,22 +58,176 @@
         </div>
     </div>
     <br>
-    <p style="font-family:'Times New Roman', Times, serif;">When we reduce the size ofthe browser, the second row with CITY NAMES breaks.
-        Because, we have given class "col-sm-2" which means each column takes 2 grid columns with small so it won't breaks until the size of the screen reaches small.
+    <p style="font-family:'Times New Roman', Times, serif;">When we reduce the size of the browser, the second row with
+        CITY NAMES breaks.
+        Because, we have given class "col-sm-2" which means each column takes 2 grid columns with small so it won't
+        breaks until the size of the screen reaches small.
         In the case of Cities, we have used "col-md" Which is medium. So, the city name row breaks first.
     </p>
-    <div class="Pictures_container">
-        <img src="Kansas.png" class="img-fluid" alt="Kansas city image">
-        <img src="Amsterdam.png" class="img-fluid" alt="Amsterdam image">
-        <img src="London.png" class="img-fluid" alt="London image">
+
+    <div class="container">
+        <img src="Kansas.jpg" class="img-fluid" alt="Kansas city image">
+        <img src="Amsterdam.jpg" class="img-fluid" alt="Amsterdam image">
+        <img src="London.jpg" class="img-fluid" alt="London image">
+    </div>
+    <br>
+    <div class="container">
+        <img src="Kansas.jpg" class="img-thumbnail" alt="Kansas city image ">
+        <img src="Amsterdam.jpg" class="img-thumbnail" alt="Amsterdam image">
+        <img src="London.jpg" class="img-thumbnail" alt="London image">
+    </div>
+    <br>
+    <table class="table table-striped table-bordered table-hover table-sm table-success" margin="200px">
+        <caption>A city, River and Tree starting with respective Letter </caption>
+        <thead>
+            <tr>
+                <th scope="col">Letter</th>
+                <th scope="col">City</th>
+                <th scope="col">River</th>
+                <th scope="col">Tree</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>K</td>
+                <td>Kansas</td>
+                <td>Kalama River</td>
+                <td>Kanji</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Amsterdam</td>
+                <td>American River</td>
+                <td>Acacia</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>London</td>
+                <td>Lomami River</td>
+                <td>Longleaf Pine</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Indianapolis</td>
+                <td>Illinois River</td>
+                <td>Indian Beech</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>Rome</td>
+                <td>Rubicon River</td>
+                <td>Redwood</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>Jaipur</td>
+                <td>James River</td>
+                <td>Jamaican Caper</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <label>Buttons with Letters</label>
+        </nav>
+        <div class="btn-group" role="group" aria-label="Default button group">
+            <button type="button" class="btn btn-outline-primary">K</button>
+            <button type="button" class="btn btn-outline-primary">A</button>
+            <button type="button" class="btn btn-outline-primary">L</button>
+            <button type="button" class="btn btn-outline-primary">I</button>
+            <button type="button" class="btn btn-outline-primary">R</button>
+            <button type="button" class="btn btn-outline-primary">J</button>
+          </div>
+          <br>
+          <br>
+          <label>Buttons with Categorization</label><br>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with Letters">
+           
+            <div class="btn-group me-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-success">K</button>
+                <button type="button" class="btn btn-success">A</button>
+                <button type="button" class="btn btn-success">L</button>
+            </div>
+
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-warning">I</button>
+                <button type="button" class="btn btn-warning">R</button>
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-danger">J</button>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <img src="Kansas.png" class=".img-thumbnail" alt="Kansas city image ">
-        <img src="Amsterdam.png" class=".img-thumbnail" alt="Amsterdam image">
-        <img src="London.png" class=".img-thumbnail" alt="London image">
-    </div>
+    <br>
+    <div class="dropdown">
+        <label>Dropdown for Links</label>
+        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="basic.html">Basic page link</a></li>
+                    <li><a class="dropdown-item" href="advanced.html">Advanced page link</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="form-label">City</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your city">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="Kansas.jpg" class="card-img-top" alt="Kansas city image">
+                <div class="card-body">
+                    <h5 class="card-title">Kansas City</h5>
+                    <p class="card-text">Kansas City sits on Missouri's western edge, straddling the border with Kansas.
+                        It's known for its barbecue, jazz heritage and fountains.</p>
+                    <a href="https://en.wikipedia.org/wiki/Kansas_City,_Missouri" class="btn btn-primary">More Info
+                        about Kansas</a>
+                </div>
+            </div>
 
+            <div class="card" style="width: 18rem;">
+                <img src="Amsterdam.jpg" class="card-img-top" alt="Amsterdam city image">
+                <div class="card-body">
+                    <h5 class="card-title">Amsterdam City</h5>
+                    <p class="card-text">Amsterdam is the Netherlands’ capital, known for its artistic heritage,
+                        elaborate canal system and narrow houses with gabled facades.</p>
+                    <a href="https://en.wikipedia.org/wiki/Amsterdam" class="btn btn-primary">More Info about
+                        Amsterdam</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="London.jpg" class="card-img-top" alt="London city image">
+                <div class="card-body">
+                    <h5 class="card-title">London City</h5>
+                    <p class="card-text">London, the capital of England and the United Kingdom, is a 21st-century city
+                        with history stretching back to Roman times. They called London 'Londinium'. </p>
+                    <a href="https://en.wikipedia.org/wiki/London" class="btn btn-primary">More Info about London</a>
+                </div>
+            </div>
+        </div>
 </body>
-
-</html>
